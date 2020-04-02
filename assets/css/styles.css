@@ -1,0 +1,144 @@
+/*generic start*/
+body {
+  background: #fafafa;
+  margin: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  color: #37474f;
+}
+a {
+  color: tomato;
+  /* font-weight: 700; */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  color: #888;
+}
+.bold {
+  font-weight: 700;
+}
+.teal-button {
+  background-color: tomato;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  width: 7rem;
+  text-align: center;
+  text-transform: capitalize !important;
+}
+.teal-button:hover {
+  background-color: #ce5742;
+  color: white;
+}
+.full-width {
+  display: flex;
+  width: 100%;
+}
+.white {
+  background: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.dark {
+  background: #4f6080;
+}
+.right {
+  text-align: right;
+}
+.italic {
+  font-style: italic;
+}
+/*generic end*/
+
+/*layout start*/
+.wrapper {
+  padding-top: 70px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.cat-buttons {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.header {
+  background: #fafafa;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header .logo {
+  width: 360px;
+}
+.header .links {
+  display: flex;
+}
+.header a {
+  color: #37474f;
+  padding-left: 12px;
+}
+.header a:hover {
+  color: 'tomato';
+}
+.header .pipe {
+  padding-left: 12px;
+}
+.footer {
+  color: #ccc;
+  display: inline-block;
+  height: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-links {
+  list-style: none;
+}
+.footer-links li a {
+  color: #ccc;
+}
+/*layout end*/
+
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+  .homepage-slideshow-wrapper {
+    display: none;
+  }
+  .container {
+    width: auto;
+  }
+}
+
+/*temporary*/
+.hide {
+  display: none;
+}
