@@ -83,6 +83,7 @@ h1 {
   padding-bottom: 16px;
   padding-top: 16px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
 }
@@ -178,10 +179,20 @@ h1 {
 }
 /*homepage*/
 
+.privacy {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
   .header .logo {
-    width: 300px;
+    width: 250px;
   }
   .homepage-slideshow-wrapper {
     display: none;
@@ -198,6 +209,9 @@ h1 {
   .example-workout-wrapper {
     margin-bottom: 1rem;
     width: 90%;
+  }
+  .privacy {
+    width: 85%;
   }
 }
 
