@@ -13,7 +13,6 @@ strong {
 }
 a {
   color: tomato;
-  /* font-weight: 700; */
   text-decoration: none;
 }
 a:hover {
@@ -21,6 +20,9 @@ a:hover {
 }
 p {
   color: #888;
+}
+h1 {
+  margin-top: 0 !important;
 }
 .bold {
   font-weight: 700;
@@ -44,9 +46,9 @@ p {
 }
 .white {
   background: white;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  padding-bottom: 20px;
+}
+.grey {
+  background: #fafafa;
 }
 .dark {
   background: #4f6080;
@@ -57,31 +59,27 @@ p {
 .italic {
   font-style: italic;
 }
+.vertical-padding {
+  padding: 50px 0;
+}
 /*generic end*/
 
 /*layout start*/
-.wrapper {
-  padding-top: 70px;
-}
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 30px;
   width: 100%;
 }
 .cat-buttons {
   margin: 0 auto;
   max-width: 400px;
-  padding-bottom: 30px;
-  padding-top: 20px;
   text-align: center;
 }
 
 .header {
-  background: #fafafa;
-  border-bottom: 1px solid #ccc;
+  background: white;
   padding-bottom: 16px;
   padding-top: 16px;
   position: fixed;
@@ -128,13 +126,78 @@ p {
 }
 /*layout end*/
 
+/*homepage*/
+.homepage-slideshow-wrapper {
+  background: white;
+}
+.rslides.homepage-slideshow li {
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+  width: 100% !important;
+}
+.rslides.homepage-slideshow img {
+  height: auto;
+  width: 300px;
+}
+.homepage-text {
+  margin: 1rem 0;
+}
+.homepage-top-text-wrapper {
+  margin-top: 40px;
+  width: 45%;
+}
+.homepage-top-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.example-workout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27%;
+  background: white;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  text-align: center;
+}
+.example-workouts-list-wrapper {
+  list-style: none;
+  margin-left: -70px;
+}
+.example-workouts-list-wrapper li {
+  color: #888;
+  font-size: 1.1rem;
+}
+.example-workouts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+/*homepage*/
+
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
+  .header .logo {
+    width: 300px;
+  }
   .homepage-slideshow-wrapper {
     display: none;
   }
   .container {
     width: auto;
+  }
+  .homepage-top-text-wrapper {
+    width: 100%;
+  }
+  .example-workouts-wrapper {
+    flex-direction: column;
+  }
+  .example-workout-wrapper {
+    margin-bottom: 1rem;
+    width: 90%;
   }
 }
 
