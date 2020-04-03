@@ -18,7 +18,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
-p {
+p,
+li {
   color: #888;
 }
 h1 {
